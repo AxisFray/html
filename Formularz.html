@@ -1,0 +1,144 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulage</title>
+</head>
+<body>
+	<table bgcolor="99ff66">
+		<tr>
+			<td>
+				<fieldset>
+				<legend>Dane osobowe</legend>
+				<form method="post" enctype="text/plain">
+					<table>
+						<tr>
+							<td>Imię</td><td><input placeholder="Jan" type="text" name="imie" required></td>
+						</tr>
+						<tr>
+							<td>Nazwisko</td><td><input placeholder="Nowak" type="text" name="nazwisko" required></td>
+						</tr>
+						<tr>
+							<td>Data urodzenia</td><td><input type="date" name="data"></td>
+						</tr>
+						<tr>
+							<td>Miejsce urodzenia</td><td>
+								<input type="text" name="miasto" value="" list="miasta">
+									<datalist id="miasta">
+										<option value="Kraków">Kraków</option>
+										<option value="Tarnów">Tarnów</option>
+										<option value="Rzeszów">Rzeszów</option>
+									</datalist>
+							</td>
+						</tr>
+					</table>
+				</form>
+				</fieldset>
+				<fieldset>
+				<legend>Pozostałe informacje</legend>
+				<form method="post" enctype="text/plain">
+					<table>
+						<tr>
+							<td>Wykształcenie</td><td>
+								<input type="radio" name="wyksztalcenie">podstawowe
+								<input type="radio" name="wyksztalcenie">średnie
+								<input type="radio" name="wyksztalcenie">wyższe
+							</td>
+						
+						</tr>
+						<tr>
+							<td>Zawód wykonywany</td><td>
+								<select name="zawod">
+									<option>informatyk</option>
+									<option>programista</option>
+									<option>grafik</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Ulubiony kolor</td><td>
+							<input type="text" name="kolor" value="" list="kolory">
+									<datalist id="kolory">
+										<option value="zielony">zielony</option>
+										<option value="czarny">czarny</option>
+										<option value="żółty">żółty</option>
+									</datalist>
+							</td>
+						</tr>
+						<tr>
+							<td>Zainteresowania</td><td>
+								<input type="checkbox" name="książki">książki
+								<br><input type="checkbox" name="muzyka">muzyka
+								<br><input type="checkbox" name="sport">sport
+							</td>
+						</tr>
+						<tr>
+							<td>Czy lubisz szkołę?</td>
+							<td>
+								<input type="range" name="" min="1" max="6" value="6">
+							</td>
+						<tr>
+							<td>Wybierz język</td>
+							<td>
+								<select name="jezyki" multiple="multiple">
+									<option value="angielski">J.angielski</option>
+									<option value="niemiecki">J.niemiecki</option>
+									<option value="hiszpański">J.hiszpański</option>
+									<option value="francuski">J.francuski</option>
+								</select>
+					</table>
+				</fieldset>
+				<fieldset>
+				<legend>Dodatkowe informacje</legend>
+				<form method="post" enctype="text/plain">
+					<table>
+						<tr>
+							<td>Uwagi</td>
+							<br><td>
+							<textarea rows="10" cols="60">
+							</textarea>
+							</td>
+						</tr>
+					</table>
+	</table>
+					<table>
+						<tr>
+							<td>
+								<input type="checkbox" name="cos">Zgoda na przetwarzanie danych osobowych
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="coss">Zgoda na otrzymywanie materiałów promocyjnych
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="reset" value="Wyczyść dane">
+								<input type="submit" value="Wyślij dane">
+							</td>
+						</tr>
+					</table>
+		</body>
+		</html>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
