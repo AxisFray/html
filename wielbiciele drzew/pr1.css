@@ -1,0 +1,93 @@
+.opisdrzewa {
+    border-color: grey;
+    color: rgb(1, 18, 1);
+    border-radius: 25px;
+    width: 30%;
+    height: 30%;
+    margin: 3px;
+    padding: 2px;
+    text-align: center;
+    float: left;
+}
+
+.zapisy {
+    border: solid grey;
+    border-radius: 25px;
+    max-width: 35%;
+    height: 200px;
+    text-align: center;
+
+
+}
+
+input {
+    width: 120px;
+    height: 30px;
+}
+
+.text1 {
+    font-size: 70px;
+    font-family: Verdana;
+
+    text-align: center;
+}
+
+h3 {
+    font-size: medium;
+    font-family: fantasy;
+    color: black;
+}
+
+.zdj {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+
+}
+
+.zdj1,
+.zdj2 {
+    height: 300px;
+    width: 250px;
+    rotate: 20;
+
+
+
+    z-index: -1;
+}
+
+.zdj1 {
+    left: 30px;
+}
+
+.zdj2 {
+    right: 30px;
+}
+
+#pasek {
+    border: white solid;
+    position: sticky;
+    top: 0;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    text-align: center;
+    line-height: 70px;
+
+}
+
+
+
+.but {
+    background-color: white;
+
+    width: 15%;
+    font-size: 20px;
+
+    margin: 3px;
+    border: solid;
+    border-radius: 25px;
+}
