@@ -1,0 +1,38 @@
+
+// ten kod powinien byc w sekcji head
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+//funkcja usuwająca div gdy sie na niego kliknie
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+
+$(this).hide() 
+//hides the current element.
+
+$("p").hide() 
+//hides all <p> elements.
+
+$(".test").hide() 
+//hides all elements with class="test".
+
+$("#test").hide() 
+//hides the element with id="test".
+
+//ready to odpalenie kodu dopiero gdy strona sie zaladuje
+$(document).ready(function(){
+  // jQuery methods go here...
+});
+
+//krotsza forma
+$(function(){
+  // jQuery methods go here...
+});
+
+
+
+
+
