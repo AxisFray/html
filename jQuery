@@ -97,7 +97,10 @@ $("p").on({
   }
 });
 
-
+//element chowa się z podaną predkoscia
+$("button").click(function(){
+  $("p").hide(1000);
+});
 
 
 
