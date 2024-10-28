@@ -102,6 +102,38 @@ $("button").click(function(){
   $("p").hide(1000);
 });
 
+//zanikanie elementow z dana szybkoscia;
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+
+fadeIn() - pojawianie sie
+fadeOut() - zanikanie
+fadeToggle() - depends if element is hidden it will fade it in
+fadeTo() - do podanej przezroczystosci
+
+
+The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).
+//elementy koloryzuja sie do podanej przezroczystosci
+$("button").click(function(){
+  $("#div1").fadeTo("slow", 0.15);
+  $("#div2").fadeTo("slow", 0.4);
+  $("#div3").fadeTo("slow", 0.7);
+});
+
+//arg.  to milisekundy lub "slow", "fast"
+slideDown() - rozwinąć
+slideUp() - zwinąć
+slideToggle() - zwinąć lub rozwinąć
+
+
+
+
+
 
 
 
