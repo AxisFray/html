@@ -1,0 +1,33 @@
+header{
+height:180px;
+background-color:  #22B14C;
+
+}
+main{
+background-color: #B5E61D;
+float: left;
+width: 60%;
+height:60vh;
+margin:0.5%;
+
+}
+#sect1{
+background-color: #EFE4B0;
+float:left;
+margin:0.5%;
+width: 37%;
+height: 60vh;
+}
+footer{
+background-color:  #22B14C;
+height:180px;
+clear: both;
+}
+.art2{
+background-color: #EFE4B0;
+float: left;
+width:26%;
+height:50px;
+margin:3%;
+
+}
