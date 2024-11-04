@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      #id1 {
+        background-color: lightgreen;
+        border-color: darkgreen;
+        border-style: solid;
+        height: 700px;
+        width: 700px;
+      }
+      #id2 {
+        background-color: rgb(0, 136, 0);
+        height: 30px;
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="id1">
+      <div id="id2"></div>
+    </div>
+    <script>
+      var x = e.clientX;
+      var y = e.clientY;
+      var newposX = x + 15;
+      var newposY = y + 15;
+
+      $(document).ready(function () {
+        $("#id1").click(function () {
+          $("#id2").animate(
+            {
+              backgroundPositionX: e.clientX,
+              backgroundPositionY: e.clientY,
+            },
+            1500,
+            "swing"
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
