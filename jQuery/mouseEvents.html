@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Przemieszczający się blok</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #myBlock {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myBlock"></div>
+
+    <script>
+      $(document).click(function (event) {
+        $("#myBlock").animate(
+          {
+            top: event.pageY,
+            left: event.pageX,
+          },
+          500
+        ); // Czas animacji w milisekundach
+      });
+    </script>
+  </body>
+</html>
