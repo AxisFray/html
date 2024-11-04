@@ -17,6 +17,7 @@
         background-color: rgb(0, 136, 0);
         height: 30px;
         width: 30px;
+        position: relative;
       }
     </style>
   </head>
@@ -31,11 +32,11 @@
       var newposY = y + 15;
 
       $(document).ready(function () {
-        $("#id1").click(function () {
+        $("#id1").click(function (event) {
           $("#id2").animate(
             {
-              backgroundPositionX: e.clientX,
-              backgroundPositionY: e.clientY,
+              top: event.pageY,
+              left: event.pageX,
             },
             1500,
             "swing"
