@@ -26,11 +26,6 @@
       <div id="id2"></div>
     </div>
     <script>
-      var x = e.clientX;
-      var y = e.clientY;
-      var newposX = x + 15;
-      var newposY = y + 15;
-
       $(document).ready(function () {
         $("#id1").click(function (event) {
           $("#id2").animate(
@@ -38,7 +33,7 @@
               top: event.pageY,
               left: event.pageX,
             },
-            1500,
+            500,
             "swing"
           );
         });
