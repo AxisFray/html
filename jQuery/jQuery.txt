@@ -131,7 +131,175 @@ slideUp() - zwinąć
 slideToggle() - zwinąć lub rozwinąć
 
 
+-  -  -  -  -  -  -  -  -  -  -  - ATRYBUTY -  -  -  -  -  -  -  -  -  -
 
+    accept – atrybut określa akceptowany zestaw znaków. Używany z input.
+    accept-charset – atrybut określa akceptowany język. Używany z form.
+    accesskey – atrybut określa klawisz skrótu. Atrybuty globalne.
+    action – atrybut określa adres strony przetwarzającej dane z formularza. Używany z form.
+    align – atrybut definiuje wyrównanie względem innych elementów. Nieobsługiwane w HTML 5.
+    alt – atrybut określa tekst alternatywny gdy nie może być wyświetlony. Używany z area, img, input.
+    async – atrybut określa, że skrypt jest wykonywany asynchronicznie (tylko dla skryptów zewnętrznych). Używany z script.
+    autocomplete – atrybut określa, czy form lub input type="text" powinien mieć włączone autouzupełnianie. Używany z form, input.
+    autofocus – atrybut określa, że powinien automatycznie uzyskać fokus po załadowaniu strony. Używany z button , input , select, textarea.
+    autoplay – atrybut określa, że dźwięk / wideo rozpocznie odtwarzanie, gdy tylko będzie gotowe. Używany z audio, video.
+    bgcolor – atrybut określa kolor tła Nieobsługiwane w HTML 5.
+    border – atrybut określa szerokość ramki Nieobsługiwane w HTML 5.
+    charset – atrybut określa kodowanie znaków. Używany z meta, script.
+    checked – atrybut określa, że element input type="text" powinien być wstępnie wybrany podczas ładowania strony (dla type = "checkbox" lub type = "radio"). Używany z input.
+    cite – atrybut określa adres źródła informacji. Używany z blockquote, del, ins, q.
+    class – atrybut określa jedną lub więcej nazw klas dla elementu (odnosi się do klasy w arkuszu stylów). Atrybuty globalne.
+    color – atrybut określa kolor tekstu u. Zamiast tego użyj CSS. Nieobsługiwane w HTML 5.
+    cols – atrybut określa widoczną szerokość obszaru tekstowego. Używany z textarea.
+    colspan – atrybut atrybut określa ilość połączonych kolumn. Używany z td, th.
+    content – atrybut podaje wartość skojarzoną z atrybutem http-equiv lub name. Używany z meta.
+    contenteditable – atrybut określa, czy zawartość jest edytowalna, czy nie. Atrybuty globalne.
+    controls – atrybut określa, że elementy sterujące audio / wideo powinny być wyświetlane (takie jak przycisk odtwarzania / wstrzymania itp.). Używany z audio, video.
+    coords – atrybut określa współrzędne regionu w mapie odsyłaczy. Używany z area.
+    data – atrybut określa plik z danymi obiektu. Używany z object.
+    data-* – atrybut służy do przechowywania danych niestandardowych prywatnych dla strony lub aplikacji. Atrybuty globalne.
+    datetime – atrybut określa datę zmian. Używany z del, ins,  time.
+    default – atrybut określa, że ścieżka ma być włączona, jeśli preferencje użytkownika nie wskazują, że inna ścieżka byłaby bardziej odpowiednia. Używany z track.
+    defer – atrybut określa opóźnienie wykonywania skryptu. Używany z script.
+    dir – atrybut określa kierunek wyświetlania tekstu. Atrybuty globalne.
+    dirname – atrybut określa, że kierunek tekstu zostanie przesłany. Używany z input, textarea.
+    disabled – atrybut określa, że określony element / grupa elementów powinien być wyłączony. Używany z button, fieldset, input, optgroup, option, select, textarea.
+    download – atrybut określa, że cel zostanie pobrany, gdy użytkownik kliknie hiperłącze. Używany z a i area.
+    draggable – atrybut określa, czy plik można przeciągać, czy nie. Atrybuty globalne.
+    enctype – atrybut określa sposób kodowania danych. Używany z form.
+    for – atrybut określa, z jakim formularzem jest powiązana etykieta / obliczenie. Używany z label, output.
+    form – atrybut określa nazwę formularza, do którego należy. Używany z button, fieldset, input, label, meter, object, output, select, textarea.
+    formaction – określa, gdzie wysłać dane formularza po przesłaniu formularza. Tylko dla type = "submit". Używany z button, input.
+    headers – atrybut określa listę nazw nagłówków komórek. Używany z td, th.
+    height – atrybut określa wysokość. Używany z canvas, embed, iframe, img, input, object, video.
+    hidden – atrybut ukrywa element. Atrybuty globalne.
+    high – atrybut określa zakres, który jest uważany za dużą wartość. Używany z meter.
+    href – atrybut określa adres strony lub miejsca. Używany z a, area, base, link.
+    hreflang – atrybut określa język docelowej strony www. Używany z a, area,link.
+    http-equiv – atrybut określa wartość dla nagłówka strony. Używany z meta.
+    id – atrybut określa unikalny identyfikator. Atrybuty globalne.
+    ismap – atrybut określa współrzędne dodawane do adresu odnośnika. Używany z img.
+    kind – atrybut określa rodzaj ścieżki tekstowej. Używany z track.
+    label – atrybut określa etykietę grupy. Używany z track, option, optgroup.
+    lang – atrybut określa język dla całej lub fragmentu strony. Atrybuty globalne.
+    list – atrybut odnosi się do datalist, który zawiera wstępnie zdefiniowane opcje dla input type="text". Używany z input i datalist.
+    loop – atrybut określa, że dźwięk / wideo będzie zaczynał się od nowa po każdym zakończeniu. Używany z audio, video.
+    low – atrybut określa zakres uważany za niską wartość. Używany z meter.
+    max – atrybut określa wartość maksymalną. Używany z input, meterprogress.
+    maxlength – atrybut określa maksymalną długość tekstu w polu. Używany z input, textarea.
+    method – atrybut określa sposób przekazywania parametrów. Używany z form.
+    min – atrybut określa minimalną wartość. Używany z input, meter.
+    multiple – atrybut określa wybór wielu elementów. Używany z input, select.
+    muted – atrybut określa, że wyjście audio wideo powinno być wyciszone. Używany z video, audio.
+    name – atrybut Określa nazwę elementu. Używany z button, fieldset, form, iframe, input, map, meta, object, output, param, select, textarea.
+    novalidate – atrybut określa, że formularz nie powinien być sprawdzany po przesłaniu. Używany z form.
+    onabort – skrypt uruchamiany po przerwaniu. Używany z audio, embed, img, objekt, video.
+    onafterprint – skrypt do uruchomienia po wydrukowaniu dokumentu. Używany z body.
+    onbeforeprint – skrypt do uruchomienia przed wydrukowaniem dokumentu. Używany z body.
+    onbeforeunload – skrypt do uruchomienia, gdy dokument ma zostać wyładowany. Używany z body.
+    onblur – skrypt do uruchomienia, gdy element straci fokus. Wszystkie widoczne elementy.
+    oncanplay – skrypt do uruchomienia, gdy plik jest gotowy do rozpoczęcia odtwarzania (gdy jest wystarczająco buforowany, aby rozpocząć). Używany z audio, enbed, objekt, video.
+    oncanplaythrough – skrypt do uruchomienia, gdy plik można odtworzyć do końca bez zatrzymywania się w celu buforowania. Używany z audio, video.
+    onchange – skrypt do uruchomienia po zmianie wartości. Wszystkie widoczne elementy.
+    onclick – atrybut określa reakcję na kliknięcie myszy. Wszystkie widoczne elementy.
+    oncontextmenu – skrypt do uruchomienia po uruchomieniu menu kontekstowego. Wszystkie widoczne elementy.
+    oncopy – skrypt do uruchomienia podczas kopiowania treści. Wszystkie widoczne elementy.
+    oncuechange – skrypt do uruchomienia, gdy cue zmieni się w track Używany z track.
+    oncut – skrypt do uruchomienia podczas wycinania zawartości. Wszystkie widoczne elementy.
+    ondblclick – atrybut określa reakcję na podwójne kliknięcie myszy. Wszystkie widoczne elementy.
+    ondrag – skrypt do uruchomienia podczas przeciągania. Wszystkie widoczne elementy.
+    ondragend – skrypt do uruchomienia na koniec operacji przeciągania. Wszystkie widoczne elementy.
+    ondragenter – skrypt do uruchomienia, gdy zostanie przeciągnięty do prawidłowego miejsca docelowego upuszczania. Wszystkie widoczne elementy.
+    ondragleave – skrypt do uruchomienia, gdy a opuści prawidłowy cel upuszczania. Wszystkie widoczne elementy.
+    ondragover – skrypt do uruchomienia, gdy jest przeciągany przez prawidłowy cel upuszczania. Wszystkie widoczn elementy.
+    ondragstart – skrypt do uruchomienia na początku operacji przeciągania. Wszystkie widoczne elementy.
+    ondrop – skrypt do uruchomienia podczas przeciągania jest upuszczany. Wszystkie widoczne elementy.
+    ondurationchange – skrypt do uruchomienia, gdy zmieni się długość nośnika. Używany z audio, video.
+    onemptied – skrypt do uruchomienia, gdy dzieje się coś złego i plik jest nagle niedostępny (np. Niespodziewane rozłączenie). Używany z audio, video.
+    onended – skrypt do uruchomienia, gdy media dobiegną końca (przydatne zdarzenie w przypadku wiadomości typu „dziękuję za wysłuchanie”). Używany z audio, video.
+    onerror – skrypt do uruchomienia w przypadku wystąpienia błędu. Używany z audio, body, embed, img, object, script ,style, video.
+    onfocus – atrybut określa reakcję na uaktywnienie elementu. Wszystkie widoczne elementy.
+    onhashchange – skrypt do uruchomienia, gdy nastąpiły zmiany w zakotwiczonej części adresu URL. Używany z body.
+    oninput – skrypt do uruchomienia, gdy otrzyma dane wejściowe użytkownika. Wszystkie widoczne elementy.
+    oninvalid – skrypt do uruchomienia, gdy jest niepoprawny. Wszystkie widoczne elementy.
+    onkeydown – atrybut określa reakcję na wciśnięcie klawisza. Wszystkie widoczne elementy.
+    onkeypress – atrybut określa reakcję na wciśnięcie i puszczenie klawisza. Wszystkie widoczne elementy.
+    onkeyup – atrybut określa reakcję na puszczenie klawisza. Wszystkie widoczne elementy.
+    onload – atrybut określa reakcję na wczytanie strony www. Używany z body, iframe, img, input, link, script.
+    onloadeddata – skrypt do uruchomienia podczas ładowania danych multimedialnych. Używany z audio, video.
+    onloadedmetadata – skrypt do uruchomienia po załadowaniu metadanych (takich jak wymiary i czas trwania). Używany z audio, video.
+    onloadstart – skrypt do uruchomienia w momencie, gdy plik zaczyna się ładować, zanim cokolwiek zostanie załadowane. Używany z audio, video.
+    onmousedown – atrybut określa reakcję na poruszenie myszą nad elementem. Wszystkie widoczne elementy.
+    onmousemove – atrybut określa reakcję na poruszenie myszą nad elementem. Wszystkie widoczne elementy.
+    onmouseout – atrybut określa reakcję na opuszczenie elementu. Wszystkie widoczne elementy.
+    onmouseover – atrybut określa reakcję na najechanie nad element. Wszystkie widoczne elementy.
+    onmouseup – atrybut określa reakcję na puszczenie przycisku myszy. Wszystkie widoczne elementy.
+    onmousewheel – skrypt do uruchomienia, gdy kółko myszy jest przewijane nad plikiem. Wszystkie widoczne elementy.
+    onoffline – skrypt do uruchomienia, gdy przeglądarka zacznie działać w trybie offline. Używany z body.
+    ononline – skrypt do uruchomienia, gdy przeglądarka zacznie działać w trybie online. Używany z body.
+    onpagehide – skrypt do uruchomienia, gdy użytkownik opuści stronę. Używany z body.
+    onpageshow – skrypt do uruchomienia, gdy użytkownik przejdzie do strony. Używany z body.
+    onpaste – skrypt do uruchomienia, gdy użytkownik wklei jakąś zawartość w pliku. Wszystkie widoczne elementy.
+    onpause – skrypt do uruchomienia, gdy nośnik zostanie wstrzymany przez użytkownika lub programowo. Używany z audio, video.
+    onplay – skrypt do uruchomienia po rozpoczęciu odtwarzania nośnika. Używany z audio, video.
+    onplaying – skrypt do uruchomienia po rozpoczęciu odtwarzania nośnika. Używany z audio, video.
+    onpopstate – skrypt do uruchomienia w przypadku zmiany historii okna. Używany z body.
+    onprogress – skrypt do uruchomienia, gdy przeglądarka jest w trakcie pobierania danych multimedialnych. Używany z audio, video
+    onratechange – skrypt uruchamiany za każdym razem, gdy zmienia się szybkość odtwarzania (np. gdy użytkownik przełącza się na tryb zwolnionego lub szybkiego przewijania do przodu). Używany z audio, video
+    onreset – skrypt do uruchomienia po kliknięciu przycisku resetowania w formularzu. Używany z form.
+    onresize – skrypt do uruchomienia podczas zmiany rozmiaru okna przeglądarki. Używany z body.
+    onscroll – skrypt do uruchomienia, gdy przewijany jest pasek przewijania. Wszystkie widoczne elementy.
+    onsearch – skrypt do uruchomienia, gdy użytkownik zapisze coś w polu wyszukiwania (dla input type="text" ). Używany z input.
+    onseeked – skrypt do uruchomienia, gdy atrybut wyszukiwania ma wartość false, co oznacza, że przeszukiwanie zostało zakończone. Używany z audio, video.
+    onseeking – skrypt do uruchomienia, gdy atrybut wyszukiwania ma wartość true, co oznacza, że wyszukiwanie jest aktywne. Używany z audio, video.
+    onselect – skrypt do uruchomienia po wybraniu. Wszystkie widoczne elementy.
+    onstalled – skrypt do uruchomienia, gdy przeglądarka nie może pobrać danych multimedialnych z jakiegokolwiek powodu. Używany z audio, video.
+    onstorage – skrypt do uruchomienia po zaktualizowaniu obszaru Web Storage. Używany z body.
+    onsubmit – skrypt do uruchomienia po przesłaniu formularza. Używany z form.
+    onsuspend – skrypt uruchamiany podczas pobierania danych multimedialnych jest zatrzymywany przed całkowitym załadowaniem z jakiegokolwiek powodu. Używany z audio, video.
+    ontimeupdate – skrypt do uruchomienia, gdy zmieniła się pozycja odtwarzania (np. gdy użytkownik szybko przechodzi do innego miejsca w mediach). Używany z audio video.
+    ontoggle – skrypt do uruchomienia, gdy użytkownik otwiera lub zamyka. Używany z details.
+    onunload – skrypt do uruchomienia po wyładowaniu strony (lub zamknięciu okna przeglądarki). Używany z body.
+    onvolumechange – skrypt uruchamiany przy każdej zmianie głośności wideo / audio. Używany z audio, video
+    onwaiting – skrypt do uruchomienia, gdy nośnik został wstrzymany, ale oczekuje się jego wznowienia (np. gdy nośnik zatrzymuje się, aby buforować więcej danych). Używany z audio, video.
+    onwheel – skrypt do uruchomienia, gdy kółko myszy przesunie się w górę lub w dół nad plikiem. Wszystkie widoczne elementy.
+    open – atrybut określa, że szczegóły powinny być widoczne (otwarte) dla użytkownika. Używany z details.
+    optimum – atrybut określa, jaka wartość jest optymalną wartością miernika. Używany z meter.
+    pattern – atrybut określa wyrażenie regularne, względem którego sprawdzana jest wartość. Używany z input.
+    placeholder – atrybut określa krótką wskazówkę opisującą oczekiwaną wartość. Używany z input, textarea.
+    poster – atrybut określa obraz, który ma być wyświetlany podczas pobierania wideo lub do momentu naciśnięcia przycisku odtwarzania przez użytkownika. Używany z video.
+    preload – atrybut określa, czy i w jaki sposób według autora dźwięk / wideo powinien zostać załadowany podczas wczytywania strony. Używany z audio, video.
+    readonly – atrybut określa tylko do odczytu. Używany z input, textarea.
+    rel – atrybut określa relacje między dokumentami. Używany z a, area, form, link.
+    reversed – atrybut określa, że kolejność na liście powinna być malejąca (9,8,7 ...). Używany z ol.
+    rows – Określa widoczną liczbę wierszy w obszarze tekstowym. Używany z textarea.
+    rowspan – Określa liczbę wierszy, które powinna obejmować komórka tabeli. Używany z td, th.
+    sandbox – atrybut włącza dodatkowy zestaw ograniczeń dla treści w iframe width="" height=""
+    scope – atrybut określa, czy komórka nagłówka jest nagłówkiem kolumny, wiersza czy grupy kolumn lub wierszy. Używany z th.
+    selected – atrybut określa, że opcja powinna być wstępnie wybrana podczas ładowania strony. Używany z option.
+    shape – atrybut określa kształt obszaru mapy odsyłaczy. Używany z area.
+    size – atrybut określa szerokość w znakach (dla input type="text" lub określa liczbę widocznych opcji (dla select). Używany z input, select.
+    sizes – atrybut określa rozmiar połączonego zasobu. Używany z img, link, source.
+    span – atrybut określa liczbę kolumn do rozpięcia. Używany z col, colgroup.
+    spellcheck – atrybut określa, czy pisownia i gramatyka ma być sprawdzana, czy nie. Atrybuty globalne.
+    src – atrybut określa adres URL pliku multimedialnego. Używany z audio, embed, iframe, img, input, script, source, track, video.
+    srcdoc – atrybut określa zawartość HTML strony, która ma być wyświetlana w iframe width="" height=""
+    srclang – atrybut określa język danych tekstowych ścieżki (wymagane, jeśli kind = "subtitles") Używany z track.
+    srcset – atrybut określa adres URL obrazu, który ma być używany w różnych sytuacjach. Używany z img, source.
+    start – atrybut określa wartość początkową uporządkowanej listy. Używany z ol.
+    step – atrybut określa prawne przedziały numerów dla pola wejściowego. Używany z input.
+    style – atrybut określa wbudowany styl CSS dla pliku. Atrybuty globalne.
+    tabindex – atrybut określa kolejność tabulacji. Atrybuty globalne.
+    target – atrybut określa okno docelowe dla otwieranego dokumentu. Używany z a, area, base, form.
+    title – atrybut określa dodatkowe informacje o pliku, atrybut określa tytuł. Atrybuty globalne.
+    translate – atrybut określa, czy zawartość elementu powinna być tłumaczona, czy też nie. Atrybuty globalne.
+    type – atrybut określa typ elementu. Używany z a, button, embed, input, link,  objectscript, source, style.
+    usemap – atrybut określa obraz jako mapę obrazu po stronie klienta. Używany z img, object.
+    value – atrybut określa wartość atrybutu. Używany z button, input, li, option, meter,  param.
+    width – atrybut określa szerokość elementu. Używany z canvas, embed, iframe, img, input, object, video.
+    wrap – atrybut określa, w jaki sposób tekst w obszarze tekstowym ma być zawijany po przesłaniu w formularzu. Używany z textarea.
+
+ 
 
 
 
