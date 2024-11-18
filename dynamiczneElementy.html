@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 onclick="addTextfield()">Javascript Tablice</h3>
+    <br />
+    <div id="demo"></div>
+    <script>
+      var akapit = document.getElementById("demo");
+      var id_increment = 0;
+      var div_size = 20;
+      function addTextfield() {
+        for (i = 0; i < 10; i++) {
+          for (j = 0; j < 10; j++) {
+            var polemapy = document.createElement("div");
+            polemapy.id = "field_id_" + id_increment;
+            polemapy.style.position = "absolute";
+            polemapy.style.width = div_size + "px";
+            polemapy.style.height = div_size + "px";
+            polemapy.style.top += i * div_size + "px";
+            polemapy.style.left += j * div_size + "px";
+            polemapy.style.backgroundColor = "#bedeff";
+            polemapy.style.border = "1px solid navy";
+
+            polemapy.setAttribute("onclick", "click(this.id)");
+            akapit.appendChild(polemapy);
+            id_increment++;
+          }
+          akapit.appendChild(document.createElement("br"));
+        }
+      }
+
+      function click(polemapy) {
+        console.log(_id);
+        var klikdiv = _id;
+        document.getElementById(klikdiv).style.backgroundColor = "#453672";
+      }
+    </script>
+  </body>
+</html>
