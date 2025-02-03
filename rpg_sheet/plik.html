@@ -26,6 +26,8 @@
     </fieldset>
 </div>
 <div id="more_info">
+    <fieldset>
+        <legend>More information</legend>
             Intelligence:<br>
             <input type="number" id="intel"><br>
             Stamina:<br>
@@ -36,9 +38,11 @@
             <input type="number" id="agility"><br>
             Personality:<br>
             <input type="text" id="rdz"><br>
-
+</fieldset>
 </div>
 <div id="combat">
+    <fieldset>
+        <legend>Combat</legend>
             Attack:<br>
             <input type="number" id="attack" min="1" max="10"><br>
             Crit die:<br>
@@ -51,8 +55,26 @@
                 <option>sword</option>
                 <option></option>
             </select>
-
+</fieldset>
 </div>
+<div id="weapon">
+    <fieldset>
+        <legend>Weapon</legend>
+    Attack:<br>
+    <input type="number" id="attack" min="1" max="10"><br>
+    Crit die:<br>
+    <input type="number" id="crit_die" min="1" max="10"><br>
+    Crit table:<br>
+    <input type="number" id="crit_table" min="1" max="10"><br>
+    Weapon:
+    <select name="w" id="weapon">
+        <option>axe</option>
+        <option>sword</option>
+        <option></option>
+    </select>
+</fieldset>
+</div>
+
 
 
 </body>
