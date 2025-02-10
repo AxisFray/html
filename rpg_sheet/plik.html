@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="plik.css" >
 </head>
 <body>
-    <div id="main_info">
+    <div id="main_info" class="main_info">
     <fieldset>
         <legend>Postać 1</legend>
         <form>
@@ -50,11 +50,10 @@
             Crit table:<br>
             <input type="number" id="crit_table" min="1" max="10"><br>
             Weapon:
-            <select name="w" id="weapon">
-                <option>axe</option>
-                <option>sword</option>
-                <option>hammer</option>
-            </select>
+            <input type="checkbox" name="w" value="hammer">Hammer
+            <input type="checkbox" name="w" value="axe">Axe
+            <input type="checkbox" name="w" value="sword">Sword
+                
 </fieldset>
 </div>
 <div id="weapon">
@@ -79,7 +78,10 @@ body:<br>
     
 </fieldset>
 </div>
-<button onclick=""
+
+<button onclick="">
+</button>
+<button onclick="getClass"></button>
 <div id="div1">
 
 </div>
@@ -93,7 +95,23 @@ body:<br>
 var div1= document.getElementById("div1")
 div1.innerHTML=attack+","+crit_die+","+crit_table;
    }
+   function getClass() {
+            const list = document.getElementsByClassName("main_info");
+            console.lop(list);
 
+            for (i=0;i<list.length;i++){
+                console.log(list[i].value);
+                console.log(list[i].id);
+            }
+
+            for (i=0;i<list.length; i++){
+                if (list[i].value=="" || list[i].value==null){
+                    console.log("Nie ma tekstu: "+ list[i].id);
+                }else{
+                    alert("dobrze");
+                }
+            }
+        }
 </script>
 
 
