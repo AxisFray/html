@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra postacie</title>
+    <style>
+        table{
+            width: 150px;
+            text-align: center;
+            height:150px;
+            border: 1.5px black solid;
+        }
+        body{
+            font-size: large;
+            font-family: fantasy;
+        }
+        button{
+            border: solid grey 1.5px;
+        }
+    </style>
+</head>
+<body>
+
+<select id="postac">
+    <option value="_1">Rycerz</option>
+    <option value="_2">Dyplomata</option>
+    <option value="_3">Król</option>
+</select>
+<button onclick="losuj()">Losuj!</button>
+<br><br>
+<table>
+    <tr><td>STR</td><td id="str">0</td><td><button onclick="Str()">&lt;</button></td><td><button onclick="Str1()">&gt;</button></td></tr>
+    <tr><td>HP</td><td id="hp">0</td><td><button onclick="Hp()">&lt;</button></td><td><button onclick="Hp1()">&gt;</button></td></tr>
+    <tr><td>MP</td><td id="mp">0</td><td><button onclick="Mp()">&lt;</button></td><td><button onclick="Mp1()">&gt;</button></td></tr>
+
+
+</table>
+
+
+
+
+
+<script>
+
+
+    var wartosc_str = 0;
+    var wartosc_hp =0;
+    var wartosc_mp = 0;
+
+    var el_str = document.getElementById("str")
+    var el_hp = document.getElementById("hp")
+    var el_mp = document.getElementById("mp")
+
+
+
+function losuj()
+{
+    var postac= document.getElementById("postac")
+    var p = postac.value
+    console.log(p)
+
+switch(p)
+{
+case "_1":
+
+wartosc_hp=10;
+wartosc_mp=5;
+wartosc_str=7;
+
+    break;
+    case "_2":
+
+wartosc_hp=7;
+wartosc_mp=10;
+wartosc_str=2;
+    break;
+    case "_3":
+
+wartosc_hp=5;
+wartosc_mp=10;
+wartosc_str=10;
+    break;}
+    el_hp.innerHTML = wartosc_hp;
+el_mp.innerHTML = wartosc_mp;
+el_str.innerHTML = wartosc_str;
+console.log(wartosc_hp);
+
+
+
+}
+
+    
+
+
+
+
+function LosowanieLiczbyPrzedzial(min, max)
+{
+    return Math.floor((Math.random() * max)+min);
+}
+
+    function Str1(){
+        var str=document.getElementById("str")
+        wartosc_str++
+        str.innerHTML=wartosc_str
+    }
+    function Hp1(){
+        var hp=document.getElementById("hp")
+        wartosc_hp++;
+        hp.innerHTML = wartosc_hp;
+    }
+    function Mp1(){
+        var mp=document.getElementById("mp")
+        wartosc_mp++;
+        mp.innerHTML = wartosc_mp;    }
+    function Str(){
+        var str=document.getElementById("str")
+        wartosc_str--
+        str.innerHTML=wartosc_str
+    }
+    function Hp(){
+        var hp=document.getElementById("hp")
+        wartosc_hp--;
+        hp.innerHTML = wartosc_hp;
+    }
+    function Mp(){
+        var mp=document.getElementById("mp")
+        wartosc_mp--;
+        mp.innerHTML = wartosc_mp;
+    }
+</script>
+    
+</body>
+</html>
